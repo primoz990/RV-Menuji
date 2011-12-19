@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MyFirstTriangleAndroid!</string>
+    <string name="app_name">my-first-triangle-android</string>
+    <string name="naslov">Meni-libGDX</string>
+</resources>
