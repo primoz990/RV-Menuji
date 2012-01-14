@@ -3,9 +3,11 @@ package com.test.myfirsttriangle;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
 
+import com.badlogic.gdx.Application;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
@@ -23,23 +25,8 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 
-public class MenuScreen implements ApplicationListener {
-	public MyFirstTriangleAndroid fgh;
-	//public ActFetch fecthspr;
-	
-	public void fetchAct(int id)
-	{
-		//fecthspr.openAct(id);
-		fgh.openAct2(0);
-	}
-	
-	
-	
-	public MenuScreen() 
-	{
-
-	}
-	
+public class MenuScreen implements ApplicationListener 
+{
 	   
         private PerspectiveCamera camera;
         private Mesh[] faces;
@@ -224,9 +211,9 @@ public class MenuScreen implements ApplicationListener {
 	        	
 	         
         	// TExturre  /////////// http://code.google.com/p/libgdx/wiki/MeshColorTexture
-			FileHandle imageFileHandle = null;
-			imageFileHandle = Gdx.files.external("/textura4.jpg");
-			texture = new Texture(imageFileHandle);
+//			FileHandle imageFileHandle = null;
+//			imageFileHandle = Gdx.files.external("/textura4.jpg");
+//			texture = new Texture(imageFileHandle);
 	       	
         	
         	 Gdx.gl.glEnable(GL10.GL_DEPTH_TEST);
@@ -278,6 +265,7 @@ public class MenuScreen implements ApplicationListener {
         		{
         			if(lastTouchY>115 && lastTouchY<165)
         			{
+        				//this.fetchAct(0);
         				preverjaj="zazeni";
         			}
         			else if(lastTouchY>205 && lastTouchY<250)
@@ -290,6 +278,7 @@ public class MenuScreen implements ApplicationListener {
         			}
         			else if(lastTouchY>380 && lastTouchY<420)
         			{
+        				
         				System.exit(0); //izhod
         			}
         			
@@ -298,7 +287,7 @@ public class MenuScreen implements ApplicationListener {
         		
         		
         		
-        		//this.fetchAct(0);
+        		
         		
         	      
         	}
@@ -312,8 +301,8 @@ public class MenuScreen implements ApplicationListener {
 
             
         	
-        	//Gdx.gl.glEnable(GL10.GL_TEXTURE_2D);
-        	//texture.bind();
+//        	Gdx.gl.glEnable(GL10.GL_TEXTURE_2D);
+//        	texture.bind();
         	
         	camera.update();
         	camera.apply(Gdx.gl10);

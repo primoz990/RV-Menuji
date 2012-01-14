@@ -6,14 +6,21 @@
     <uses-sdk android:minSdkVersion="3" />
 
     <application android:icon="@drawable/icon" android:label="@string/naslov">
-        <activity android:name=".MyFirstTriangleAndroid"
+        <activity android:name=".mojaAplication"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".IzbiraMuzikeActivity"
+        <activity android:name=".OpisAvtorja"
+                  android:label="@string/app_name">
+            <intent-filter>
+                
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".opisAplikacijeActivity"
                   android:label="@string/app_name">
             <intent-filter>
                 
